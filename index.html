@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://kit.fontawesome.com/26e3ee569a.js"></script>
+   <title>CSS Приклади</title>
+   <style>
+      @keyframes mymove {
+         0% {background-color: red;}
+         50% {background-color: yellow;}
+         100% {background-color: red;}
+      }
+
+      .tooltip {
+         position: relative;
+         display: inline-block;
+         border-bottom: 2px dotted black;
+      }
+      
+      .tooltip .tooltip-text {
+         position: absolute;
+         visibility: hidden;
+         width: 120px;
+         background-color: black;
+         color: #fff;
+         text-align: center;
+         padding: 5px 0;
+         border-radius: 6px;
+      }
+      
+      .tooltip:hover .tooltip-text {
+         visibility: visible;
+      }
+   </style>
+</head>
+<body>
+
+   <h2>1.1 CSS Синтаксис</h2>
+   <h1 style="color: blue; font-size: 20px;">Це заголовок h1</h1>
+
+   <h2>1.2 CSS Селектори</h2>
+   <p style="color: red;">Звичайний абзац тексту.</p>
+   <p style="font-weight: bold;">Абзац з жирним шрифтом.</p>
+   <div style="background-color: lightgray;">Це блок із сірим фоном.</div>
+
+   <h2>1.3 CSS Кольори (RGB, HEX, HSL)</h2>
+   <p style="color: rgb(255, 0, 0);">Текст червоного кольору (RGB).</p>
+   <p style="color: #00ff00;">Текст зеленого кольору (HEX).</p>
+   <p style="color: hsl(240, 100%, 50%);">Текст синього кольору (HSL).</p>
+
+   <h2>1.4 CSS Фони</h2>
+   <div style="width: 200px; height: 100px; color: white;
+   background-image: url('https://loremflickr.com/200/200/cat?random=1'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+      Блок із фоном
+   </div>
+
+   <h2>1.5 CSS Межі</h2>
+   <div style="border: 2px solid black;">Це блок з чорною межею.</div>
+
+   <h2>1.6 CSS Поля</h2>
+   <div style="margin: 20px;">Це блок з полями (відступами) по 20px.</div>
+
+   <h2>1.7 CSS Межі</h2>
+   <div style="border: 5px dashed green;">Це блок із зеленою пунктирною межею.</div>
+
+   <h2>1.8 CSS Padding (Внутрішній відступ)</h2>
+   <div style="padding: 10px;">Це блок із внутрішнім відступом 10px.</div>
+
+   <h2>1.9 CSS Висота, ширина і максимальна ширина</h2>
+   <div style="width: 1fr; height: 100px; max-width: 150px; background-color: lightblue;">
+      Блок з фіксованою шириною і висотою.
+   </div>
+
+   <h2>1.10 CSS Блочна модель</h2>
+   <div style="width: 300px; margin: 20px; padding: 10px; border: 2px solid black; background-color: yellow;">
+      Це блок із блочною моделлю.
+   </div>
+
+   <h2>1.11 CSS Іконки</h2>
+   <p class="fas fa-cloud">Налаштування</p>
+
+   <h2>1.12 CSS Посилання</h2>
+   <a href="#" style="color: blue; text-decoration: none;">Це посилання без підкреслення.</a>
+
+   <h2>1.13 CSS Списки</h2>
+   <ul style="list-style-type: square;">
+      <li>Перший елемент</li>
+      <li>Другий елемент</li>
+   </ul>
+
+   <h2>1.14 CSS Таблиці</h2>
+   <table style="border-collapse: collapse; width: 100%;">
+      <tr>
+         <th style="border: 1px solid black; padding: 5px;">Заголовок 1</th>
+         <th style="border: 1px solid black; padding: 5px;">Заголовок 2</th>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black; padding: 5px;">Дані 1</td>
+         <td style="border: 1px solid black; padding: 5px;">Дані 2</td>
+      </tr>
+   </table>
+
+   <h2>2.1 Заокруглені кути</h2>
+   <div style="border: 1px solid black; border-radius: 15px; padding: 10px;">
+      Це блок із заокругленими кутами.
+   </div>
+
+   <h2>2.2 CSS Анімації</h2>
+   <div style="width: 100px; height: 100px; background-color: red; animation: mymove 5s infinite;">
+      Анімований блок
+   </div>
+
+   <h2>2.3 Підказки CSS</h2>
+   <div class="tooltip"> Наведи на мене
+      <span class="tooltip-text">Це підказка</span>
+   </div>
+
+   <h2>2.4 Кнопки CSS</h2>
+   <button style="background-color: blue; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+      Кнопка
+   </button>
+
+   <h2>2.5 CSS Пагінація</h2>
+   <div style="display: flex; justify-content: left;">
+      <a href="#" style="padding: 8px 16px; text-decoration: none; background-color: lightgray;">1</a>
+      <a href="#" style="padding: 8px 16px; text-decoration: none; background-color: lightgray;">2</a>
+      <a href="#" style="padding: 8px 16px; text-decoration: none; background-color: lightgray;">3</a>
+   </div>
+
+   <h2>2.6 Створення стовпців CSS</h2>
+   <div style="column-count: 3; column-gap: 100px;">
+      <p>Це текст, розподілений на три стовпціііііііііііііііііііііііііііііііііііііііііііііііііііііііі.</p>
+   </div>
+
+   <h2>2.7 Випадаючі списки CSS</h2>
+   <style>
+      .dropdown {
+         position: relative;
+         display: inline-block;
+      }
+
+      .dropdown-content {
+         display: none;
+         position: absolute;
+         background-color: lightgray;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+      }
+
+      .dropdown-content a {
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+      }
+
+      .dropdown-content a:hover {
+         background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+         display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+         background-color: darkblue;
+      }
+  </style>
+   <div class="dropdown">
+      <button class="dropbtn" style="background-color: blue; color: white; padding: 10px;">Меню</button>
+      <div class="dropdown-content">
+         <a href="#">Опція 1</a>
+         <a href="#">Опція 2</a>
+      </div>
+   </div>
+
+   <h2>2.9 Тіньові ефекти CSS</h2>
+   <div style="width: 100px; height: 100px; background-color: lightblue;
+   box-shadow: 10px 10px 5px gray;
+   text-shadow: 2px 2px 5px red, 0 0 5px #0000FF, -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   color:#00ff00;
+   font-size: 30px;">
+      Блок із тінями
+   </div>
+
+   <h2>2.10 CSS Box Shadow</h2>
+   <p style="box-shadow: 2px 2px 5px gray; padding: 10px;">
+      Box Shadow
+   </p>
+
+   <h2>2.11 Переходи CSS</h2>
+   <style>
+      .hover-div {
+         background-color: lightcoral;
+         transition: background-color 2s ease;
+      }
+
+      .hover-div:hover {
+         background-color: lightblue;
+      }
+   </style>
+   <div class="hover-div">Наведи на мене</div>
+
+   <h2>2.12 Текстові ефекти CSS</h2>
+   <style>
+      .text-overflow-clip {
+         white-space: nowrap;
+         width: 200px;
+         border: 1px solid #000000;
+         overflow: hidden;
+         text-overflow: clip;
+      }
+
+      .text-overflow-ellipsis {
+         white-space: nowrap;
+         width: 200px;
+         border: 1px solid #000000;
+         overflow: hidden;
+         text-overflow: ellipsis;
+      }
+
+      .word-wrap {
+         word-wrap: break-word;
+      }
+
+      .word-break-keep-all {
+         word-break: keep-all;
+      }
+
+      .word-break-break-all {
+         word-break: break-all;
+      }
+
+      .writing-mode-horizontal {
+         writing-mode: horizontal-tb;
+      }
+
+      .writing-mode-vertical {
+         writing-mode: vertical-rl;
+      }
+  </style>
+  <p class="text-overflow-clip">Це довгий текст, який не поміститься в блок.</p>
+  <p class="text-overflow-ellipsis">Це довгий текст, який не поміститься в блок.</p>
+  <p style="word-break: break-word;">Цей параграф містить дуже довге слово: thisisaveryveryveryveryveryverylongword. Довге слово буде перенесено на наступний рядок.</p>
+  <p style="word-break: keep-all;">Цей параграф містить текст. Цей рядок буде-розриватися-на-дефісах.</p>
+  <p style="word-break: break-all;">Цей параграф містить текст. Рядки будуть розриватися на будь-якому символі.</p>
+  <p style="writing-mode: vertical-rl;">Вертикальний</p>
+
+</body>
+</html>
